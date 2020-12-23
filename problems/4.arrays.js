@@ -3,24 +3,25 @@
 * @returns {number} - The average of the first and last values
 */
 
-let number = 0
-let empty = []
 
-function firstAndLastAverage(arr) 
+function firstAndLastAverage(arr=[]) 
+
 {
-  console.log(arr.length)
-  if (arr.length !== 1) 
+  let number = 0
+  
+  
+  if (arr.length >= 2) 
   {
   number = (arr[0] + arr[arr.length - 1])/2
   return number
   }else
   {
-    return empty
+    return null
   }
-
+ 
 }
 
-firstAndLastAverage([])
+firstAndLastAverage()
 
 
 /** Duplicates all values inside an array.

@@ -50,7 +50,7 @@ function powersOfTwo(count)
 {
  let number =[]
  let powers = 0
-  for (let i = 0; i <= count; i +=1)
+  for (let i = 0; i < count; i +=1)
   {
    powers = 2**i 
    number.push(powers)

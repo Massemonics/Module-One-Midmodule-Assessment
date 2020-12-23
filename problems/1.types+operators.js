@@ -22,29 +22,19 @@ console.log(isNumber(-5))
 */
 function isTruthy(val) 
 {
-
-   let other = val
-   console.log('ingreso ' + other)
-  switch(other)
+  console.log(val)
+  if (val)
   {
-    case typeof other === "boolean"       : return other;    break;
-    case typeof other === "number"        : return true;   break;
-    case typeof other === "string"        : return true;   break;
-    case typeof other === "undefined"     : return false;  break;
-  //   // case typeof val === ""        : return true;  break;
-  //   // case  0         : return false; break;
-  //   // case null       : return false; break;  
-  //   // case undefined  : return false; break;
-  //   // case NaN        : return false; break;
-  //   // case 'NaN'      : return false; break;
-  //   // case Infinity   : return true;  break;
-  //   // default         : return true;  break;
+    return true 
+  }else 
+  {
+    return false 
   }
-
 }
 
-isTruthy()
-console.log(isTruthy(7))
+isTruthy([])
+console.log(isTruthy([]))
+
 
 module.exports = {
   isNumber,

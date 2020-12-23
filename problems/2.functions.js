@@ -30,17 +30,14 @@ greeting('Daniel')
 */
 
 
-// const globalCount  = () => 
-// {
-//   global = 0 + globalCount()
-// }
+function incrementGlobalCount(val) 
+{
+  
+global.globalCount += val  
 
-// function incrementGlobalCount(val) 
-// {
-//   global.globalCount(val)
-// }
+}
 
-// console.log(incrementGlobalCount(10))
+console.log(incrementGlobalCount(10))
 
 
 /** Multiplies three numbers
